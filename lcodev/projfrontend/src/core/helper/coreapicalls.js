@@ -1,14 +1,7 @@
 import { API } from "../../backend"
 
 export const getProducts = () => {
-  return fetch(`${API}product`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Headers": "*",
-    },
-  })
+  return fetch(`${API}product`, { method: "GET" })
     .then((response) => {
       return response.json()
     })

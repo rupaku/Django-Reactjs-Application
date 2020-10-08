@@ -117,3 +117,14 @@ class Migration(migrations.Migration):
 >>> user.is_staff=True
 >>> user.is_superuser=True
 >>> user.save() -->
+
+# For CORS issue
+
+in settings.py file
+add corsheaders under APPS
+add corsmiddlewares and this
+CORS_ORIGIN_WHITELIST ='https://localhost:3000',
+
+signup:
+rk@gmail.com
+1234
